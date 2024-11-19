@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Цвет</h1>
+    <button>Сменить цвет</button>
+    <p style="width: 300px; font-size: 20px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquam
+      minima praesentium deserunt veritatis laborum eum, necessitatibus voluptas
+      dignissimos quam doloribus odio quia ab atque commodi! Eos sequi quam
+      magni?
+    </p>
+
+    <script>
+      let button = document.querySelector("button");
+      let text = document.querySelector("p");
+
+      button.addEventListener("click", () => {
+        if (text.style.color === "red") {
+          text.style.color = "black";
+        } else {
+          text.style.color = "red";
+        }
+      });
+    </script>
+  </body>
+</html>
